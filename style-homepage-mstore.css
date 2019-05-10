@@ -1,0 +1,493 @@
+html,
+body {
+  min-width: 1200px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: auto;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper-center {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+.header-info {
+  width: 100%;
+  height: 46px;
+  background-color: #31353d;
+  color: #d7d7d7;
+  font-size: 10px;
+}
+
+.header-contacts {
+  display: flex;
+  width: 285px;
+  align-items: center;
+  margin: 0;
+  padding-left: 15px;
+}
+
+.header-contacts > span {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.header-choice {
+  display: flex;
+  justify-content: flex-end;
+  text-transform: uppercase;
+  width: 285px;
+  align-items: center;
+  margin: 0;
+  padding-right: 15px;
+}
+
+.header-choice > span {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.header-choice > select {
+  color: #d7d7d7;
+  cursor: pointer;
+  font-size: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin-left: 5px;
+}
+
+.main-user-nav {
+  width: 100%;
+  height: 65px;
+}
+
+.header-center {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.main-logo {
+  width: 285px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-logo p {
+  position: relative;
+  font-family: "Ancuu", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: -0.075em;
+  font-weight: 700;
+  margin: 0;
+  margin-left: 15px;
+  padding: 0;
+}
+
+.main-logo p::after {
+  position: absolute;
+  top: 29px;
+  left: 88px;
+  content: " ";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #00c8c8;
+}
+
+.header-nav {
+  width: 600px;
+}
+
+.user-menu {
+  width: 285px;
+  margin-right: 15px;
+}
+
+.header-nav-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav-list li {
+  list-style: none;
+}
+
+
+.header-nav-list li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #464646;
+  transition-duration: 0.3s;
+  transition-property: color;
+}
+
+.header-nav-list li a:hover,
+.header-nav-list li a:focus {
+  border-bottom: 0.5px dotted black;
+  color: black;
+}
+
+.header-nav-list li a:active {
+  opacity: 0.5;
+}
+
+.user-menu-list {
+  display: flex;
+  font-size: 11px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.user-menu-list img {
+  margin-right: 24px;
+  transition-duration: 0.3s;
+}
+
+.user-menu-list img:hover,
+.user-menu-list img:focus {
+  opacity: 0.6;
+}
+
+.user-menu-list img:active {
+  opacity: 0.4;
+}
+
+.user-menu-list .shopping-cart img {
+  margin-right: 10px;
+}
+
+.user-menu-list li {
+  list-style: none;
+}
+
+.ad-top {
+  position:relative;
+  display: flex;
+  width: 100%;
+  height: 630px;
+  margin: 0;
+  padding: 0;
+  background-color: #96dbc9;
+  background-image: url(img/background-ad-top.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+.ad-center {
+  position: relative;
+}
+
+.ad-top-text {
+  position: absolute;
+  left: 115px;
+  top: 138px;
+  z-index: 1;
+  width: 470px;
+  height: 332px;
+
+}
+
+.ad-top-text p {
+  margin: 0;
+  padding: 0;
+}
+
+.ad-top-text p:nth-child(1) {
+  margin-bottom: 14px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.072em;
+  color: #31415c;
+}
+
+.ad-top-text p:nth-child(2) {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 72px;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  line-height: 72px;
+  color: #31415c;
+}
+
+.ad-top-text p:nth-child(3) {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 72px;
+  color: #252525;
+}
+
+.shopping-now {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  margin-right: 10px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: auto;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.shopping-now::after {
+  position: absolute;
+  top: 15%;
+  left: 80px;
+  width: 5px;
+  height: 8px;
+  background-image: url(img/Arrow_Right.png);
+  content: " ";
+}
+
+.shopping-now:hover,
+.shopping-now:focus {
+  opacity: 0.7;
+}
+
+.shopping-now:active {
+  opacity: 0.5;
+}
+
+.sopping-support-retum {
+  display: flex;
+  align-items: center;
+  widows: 100%;
+  height: 95px;
+  margin: 0;
+  padding: 0;
+}
+
+.sopping-support-retum-list {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+  margin: 0;
+  padding: 0;
+}
+
+.sopping-support-retum-list li {
+  position: relative;
+  width: 270px;
+  margin: 0;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-left: 70px;
+  box-sizing: border-box;
+}
+
+.sopping-support-retum-list .advantage h3 {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.075em;
+  color: #252525;
+}
+
+.sopping-support-retum-list .advantage p {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.075em;
+  color: #898989;
+}
+
+.shipping {
+
+}
+
+.shipping::before {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 70px;
+  height: 100%;
+  background-image: url(img/Shiping.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+}
+
+.shipping {
+  
+}
+
+.support::before {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 70px;
+  height: 100%;
+  background-image: url(img/Support.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+}
+
+.return::before {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 70px;
+  height: 100%;
+  background-image: url(img/Return.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+}
+
+.payment::before {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 70px;
+  height: 100%;
+  background-image: url(img/Payment.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+}
+
+.new-arrivals {
+  display: flex;
+  justify-content: space-around;
+  align-content: space-between;
+  flex-wrap: wrap;
+  height: 690px;
+}
+
+.shirt-for-boys {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  background-image: url(img/ShirtForBoysBG.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.shirt-for-girls {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-image: url(img/ShirtForGirlsBG.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.arrival-wrapper {
+  width: 570px;
+  height: 400px;
+  
+/*  Для сеток*/
+  box-shadow: 0 0 0 1px red;
+}
+
+.shoes-collection {
+  width: 1170px;
+  height: 260px;
+  background-image: url(img/ShoesCollectionBg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  /*  Для сеток*/
+  box-shadow: 0 0 0 1px red;
+}
+
+.new-arrivals-title {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 24px;
+  letter-spacing: -0.05em;
+  color: #252525;
+}
+
+.arrivals {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 14px;
+  order: -1;
+}
+
+.link-to-item {
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end
+}
+
+.red {
+  color: #ff0036;
+}
+
+.price {
+  align-self: flex-end;
+  margin: 0;
+  margin-top: 14px;
+  padding: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 14px;
+}
+
+.short-description {
+
+}
