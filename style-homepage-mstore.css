@@ -72,7 +72,7 @@ li {
 }
 
 .header-choice > select {
-  color: #d7d7d7;
+  color: #ffffff;
   cursor: pointer;
   font-size: 10px;
   background-color: rgba(0, 0, 0, 0);
@@ -81,6 +81,12 @@ li {
   -moz-appearance: none;
   appearance: none;
   margin-left: 5px;
+}
+
+#language-choice option,
+#currency-choice option {
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .main-user-nav {
@@ -146,7 +152,8 @@ li {
   display: flex;
   align-items: center;
   height: 65px;
-
+  
+  border: 
 }
 
 
@@ -166,7 +173,7 @@ li {
 
 .header-nav-list li a:hover,
 .header-nav-list li a:focus {
-  border-bottom: 6px solid #464646;
+  border-bottom: 4px solid #464646;
   color: black;
 }
 
@@ -272,7 +279,6 @@ li {
   margin: 0;
   padding: 0;
   margin-right: 30px;
-  font-family: "Roboto", "Arial", sans-serif;
   font-size: 10px;
   text-decoration: none;
   font-weight: 700;
@@ -436,13 +442,12 @@ li {
 }
 
 .shoes-collection {
+  position: relative;
   width: 1170px;
   height: 260px;
   background-image: url(img/ShoesCollectionBg.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  /*  Для сеток*/
-  box-shadow: 0 0 0 1px red;
 }
 
 .new-arrivals-title {
@@ -521,4 +526,48 @@ li {
 
 .left {
   text-align: left;
+}
+
+.shoes-collection-link {
+  position: absolute;
+  top: 60px;
+  left: 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+.shoes-collection-link p {
+  margin: 0;  
+  padding: 0;
+}
+
+.shoes-collection-title {
+  margin: 0;  
+  margin-bottom: 8px;
+  padding: 0;
+  font-weight: 700;
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: -0.050em;
+  line-height: 36px;
+  color: #00c8c8;
+}
+
+.shoes-collection-link p:nth-of-type(1){
+  order: -1;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 14px;
+  color: #f7941d;
+}
+
+.shoes-collection-link p:nth-of-type(2) {
+  margin-bottom: 36px;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  line-height: auto;
+  color: #636363;
 }
