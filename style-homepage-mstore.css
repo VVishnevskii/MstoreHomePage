@@ -72,7 +72,7 @@ li {
 }
 
 .header-choice > select {
-  color: #d7d7d7;
+  color: #ffffff;
   cursor: pointer;
   font-size: 10px;
   background-color: rgba(0, 0, 0, 0);
@@ -81,6 +81,12 @@ li {
   -moz-appearance: none;
   appearance: none;
   margin-left: 5px;
+}
+
+#language-choice option,
+#currency-choice option {
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .main-user-nav {
@@ -137,26 +143,37 @@ li {
 .header-nav-list {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
 
 .header-nav-list li {
-  list-style: none;
+  display: flex;
+  align-items: center;
+  height: 65px;
+  
+  border: 
 }
 
 
 .header-nav-list li a {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  vertical-align: middle;
   font-size: 14px;
   text-decoration: none;
   color: #464646;
+  box-sizing: border-box;
+  border: 4px solid rgba(0, 0, 0, 0);
   transition-duration: 0.3s;
   transition-property: color;
 }
 
 .header-nav-list li a:hover,
 .header-nav-list li a:focus {
-  border-bottom: 0.5px dotted black;
+  border-bottom: 4px solid #464646;
   color: black;
 }
 
@@ -257,12 +274,11 @@ li {
   color: #252525;
 }
 
-.shopping-now {
+.open-more {
   position: relative;
   margin: 0;
   padding: 0;
-  margin-right: 10px;
-  font-family: "Roboto", "Arial", sans-serif;
+  margin-right: 30px;
   font-size: 10px;
   text-decoration: none;
   font-weight: 700;
@@ -272,22 +288,22 @@ li {
   color: #111111;
 }
 
-.shopping-now::after {
+.open-more::after {
   position: absolute;
-  top: 15%;
-  left: 80px;
+  top: 18%;
+  left: 85px;
   width: 5px;
   height: 8px;
   background-image: url(img/Arrow_Right.png);
   content: " ";
 }
 
-.shopping-now:hover,
-.shopping-now:focus {
+.open-more:hover,
+.open-more:focus {
   opacity: 0.7;
 }
 
-.shopping-now:active {
+.open-more:active {
   opacity: 0.5;
 }
 
@@ -404,42 +420,34 @@ li {
   height: 690px;
 }
 
-.shirt-for-boys {
-  display: flex;
-  flex-direction: column;
+.new-arrival-left {
   align-items: flex-end;
-  justify-content: center;
   background-image: url(img/ShirtForBoysBG.jpg);
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.shirt-for-girls {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+.new-arrival-right {
   background-image: url(img/ShirtForGirlsBG.jpg);
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .arrival-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 570px;
   height: 400px;
-  
-/*  Для сеток*/
-  box-shadow: 0 0 0 1px red;
 }
 
 .shoes-collection {
+  position: relative;
   width: 1170px;
   height: 260px;
   background-image: url(img/ShoesCollectionBg.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  /*  Для сеток*/
-  box-shadow: 0 0 0 1px red;
 }
 
 .new-arrivals-title {
@@ -469,7 +477,6 @@ li {
   width: 270px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end
 }
 
 .red {
@@ -477,7 +484,6 @@ li {
 }
 
 .price {
-  align-self: flex-end;
   margin: 0;
   margin-top: 14px;
   padding: 0;
@@ -489,5 +495,79 @@ li {
 }
 
 .short-description {
+  height: 116px;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 36px;
+  padding: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.075em;
+  color: #636363;
+}
 
+.item-left {
+  margin-right: 15px;
+  align-items: flex-end;
+}
+
+.item-right {
+  margin-left: 15px;
+  align-items: flex-start;
+}
+
+.blue {
+  color: #00b8b8;
+}
+
+.right {
+  text-align: right;
+}
+
+.left {
+  text-align: left;
+}
+
+.shoes-collection-link {
+  position: absolute;
+  top: 60px;
+  left: 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+.shoes-collection-link p {
+  margin: 0;  
+  padding: 0;
+}
+
+.shoes-collection-title {
+  margin: 0;  
+  margin-bottom: 8px;
+  padding: 0;
+  font-weight: 700;
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: -0.050em;
+  line-height: 36px;
+  color: #00c8c8;
+}
+
+.shoes-collection-link p:nth-of-type(1){
+  order: -1;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 14px;
+  color: #f7941d;
+}
+
+.shoes-collection-link p:nth-of-type(2) {
+  margin-bottom: 36px;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  line-height: auto;
+  color: #636363;
 }
