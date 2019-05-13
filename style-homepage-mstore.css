@@ -217,7 +217,7 @@ h3 {
 }
 
 .user-menu-list img:active {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .user-menu-list .shopping-cart img {
@@ -627,7 +627,8 @@ h3 {
   box-shadow: 0 0 0 1px pink;
 }
 
-.feauture-product-list > li > a {
+.feauture-product-list .items {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -639,7 +640,88 @@ h3 {
   background-image: url(img/AbominableHoodie.jpg);
   background-repeat: no-repeat;
   background-position: top;
-  
-  /*  Для сеток*/
-  box-shadow: 0 0 0 1px;
+}
+
+.item-2 {
+  background-image: url(img/HollisterBackyardSweatshirt.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.item-3 {
+  background-image: url(img/OsloTrekHoodie.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.item-4 {
+  background-image: url(img/MachStreetSweatshirt.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.item-5 {
+  background-image: url(img/BackyardSweatShirt.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.item-6 {
+  background-image: url(img/FadedShortSleeves.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.item-7 {
+  background-image: url(img/OsloTrekHoodieMen.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.item-8 {
+  background-image: url(img/LeatherSneakers.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.pop-up {
+  position: absolute;
+  top: 275px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 270px;
+  height: 40px;
+  background-color: #ffffff;
+  opacity: 0;
+  transition-duration: 0.8s;
+  transition-property: opacity;
+}
+
+.items:hover .pop-up {
+  opacity: 0.95;
+}
+
+.pop-up > button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  transition-duration: 0.3s, 0.2s;
+  transition-property: opacity, transform;
+}
+
+.pop-up > button:hover,
+.pop-up > button:focus {
+  opacity: 0.6;
+}
+
+.pop-up > button:active {
+  transform: scale(1.1);
+}
+
+.product-name {
+  font-size: 14px;
+  font-weight: 300px;
+  letter-spacing: 0.05em;
+  color: #555555;
 }
