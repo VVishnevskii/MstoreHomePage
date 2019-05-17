@@ -280,9 +280,10 @@ h3 {
 }
 
 .ad-top-text p:nth-child(3) {
+  margin-top: 16px;
+  margin-bottom: 26px;
   font-size: 14px;
   font-style: italic;
-  line-height: 72px;
   color: #252525;
 }
 
