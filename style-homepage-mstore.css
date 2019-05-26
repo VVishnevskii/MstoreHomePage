@@ -887,3 +887,31 @@ button {
   letter-spacing: 0.1em;
   color: #636363;
 }
+
+.about-mstore {
+  background-color: #96dbc9;
+  background-image: url(img/bgWeLoveMstore.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  
+  height: 400px;
+  box-shadow: inset 0 0 0 1px pink;
+}
+
+.about-mstore-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 415px;
+  height: 268px;
+  margin-left: 85px;
+}
+
+.about-mstore-title {
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #31353d;
+}
