@@ -287,7 +287,8 @@ button {
 .open-more {
   position: relative;
   z-index: 2;
-  display: block;
+  display: flex;
+  align-items: baseline;
   margin: 0;
   padding: 0;
   margin-right: 30px;
@@ -300,9 +301,8 @@ button {
 }
 
 .open-more::after {
-  position: absolute;
-  top: 18%;
-  left: 110%;
+  display: block;
+  margin-left: 6px;
   width: 5px;
   height: 8px;
   background-image: url(img/Arrow_Right.png);
