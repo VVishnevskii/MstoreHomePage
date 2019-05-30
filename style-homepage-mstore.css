@@ -302,11 +302,11 @@ button {
 .open-more::after {
   position: absolute;
   top: 18%;
-  left: 85px;
+  left: 110%;
   width: 5px;
   height: 8px;
   background-image: url(img/Arrow_Right.png);
-  content: " ";
+  content: "";
 }
 
 .open-more:hover,
@@ -898,10 +898,11 @@ button {
   box-shadow: inset 0 0 0 1px pink;
 }
 
-.about-mstore-text {
+.about-mstore-block {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 62px;
   align-items: center;
   width: 415px;
   height: 268px;
@@ -909,9 +910,30 @@ button {
 }
 
 .about-mstore-title {
+  position: relative;
   font-size: 30px;
   font-weight: 900;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  color: #31353d;
+}
+
+.about-mstore-title::before {
+  position: absolute;
+  top: 48px;
+  left: 112px;
+  width: 50px;
+  height: 0px;
+  border: 1px solid #5a6273;
+  content: "";
+}
+
+.about-mstore-text {
+  margin: 35px 0;
+  padding: 0;
+  text-align: center;
+  font-size: 12px;
+  line-height: 36px;
+  letter-spacing: 0.1em;
   color: #31353d;
 }
