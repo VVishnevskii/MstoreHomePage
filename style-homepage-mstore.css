@@ -604,7 +604,7 @@ button {
 
 
 
-.feauture-product-list {
+.product-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -612,14 +612,14 @@ button {
   padding: 0;
 }
 
-.feauture-product-list > li {
+.product-list > li {
   display: flex;
   width: 270px;
   height: 415px;
   margin-bottom: 30px;
 }
 
-.feauture-product-list .items {
+.product-list .items {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -630,7 +630,7 @@ button {
   padding: 0;
 }
   
-.feauture-product-list > li .item-1{
+.product-list > li .item-1{
   background-image: url(img/AbominableHoodie.jpg);
   background-repeat: no-repeat;
   background-position: top;
@@ -643,7 +643,7 @@ button {
   background-position: top;
 }
 
-.item-2::after {
+.item-hot::after {
   position: absolute;
   top: -21px;
   left: 0;
@@ -676,7 +676,7 @@ button {
   background-position: top;
 }
 
-.item-4::after {
+.item-new::after {
   position: absolute;
   top: -21px;
   left: 0;
@@ -703,7 +703,7 @@ button {
   background-position: top;
 }
 
-.item-5::after {
+.item-sale::after {
   position: absolute;
   top: -21px;
   left: 0;
@@ -936,4 +936,70 @@ button {
   line-height: 36px;
   letter-spacing: 0.1em;
   color: #31353d;
+}
+
+.best-sellers-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.sale-sidebar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 270px;
+  height: 506px;
+  margin: 0;
+  padding: 0;
+  background-image: url(img/bgSaleSidebar.jpg);
+}
+
+.best-sellers {
+  width: 870px;
+  margin: 0;
+  padding: 0;
+}
+
+.sale-sidebar-link {
+  position: absolute;
+  z-index: 1;
+  top: 80px;
+  left: 100px;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #252525;
+}
+
+.sale-sidebar-link:hover,
+.sale-sidebar-link:focus {
+  opacity: 0.7;
+}
+
+.sale-sidebar-link:active {
+  opacity: 1;
+}
+
+.sale-sidebar-title {
+  margin-top: 22px;
+  font-family: "BigNoodleTitling", "Arial", sans-serif;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #00c8c8;
+}
+
+.sale-sidebar-text {
+  margin: 0;
+  padding: 0;
+  font-family: "BigNoodleTitling", "Arial", sans-serif;
+  font-size: 72px;
+  letter-spacing: 0;
+  color: #00c8c8;
+  opacity: 0.5;
 }
