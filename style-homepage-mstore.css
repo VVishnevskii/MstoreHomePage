@@ -1003,3 +1003,165 @@ button {
   color: #00c8c8;
   opacity: 0.5;
 }
+
+.blog-post {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  height: 430px;
+}
+
+.blog-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.blog-post-title {
+  margin-top: 20px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: #252525;
+}
+
+.blog-post-info {
+  display: flex;
+  width: 100%;
+  height: 14px;
+  margin: 0;
+  margin-bottom: 18px;
+  padding: 0;
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  color: #636363;
+}
+
+
+
+
+.blog-post-date {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-top: 2px;
+}
+
+.blog-post-date::before {
+  width: 12px;
+  height: 14px;
+  margin: 0;
+  margin-right: 7px;
+  background-image: url(img/BlogCal.jpg);
+  background-position: 0 -1.5px;
+  background-repeat: no-repeat;
+  content: " ";
+}
+
+.blog-post-comment {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-top: 2px;
+}
+
+.blog-post-comment::before {
+  width: 12px;
+  height: 14px;
+  margin: 0;
+  margin-right: 7px;
+  margin-left: 25px;
+  background-image: url(img/BlogCom.jpg);
+  background-repeat: no-repeat;
+  content: " ";
+}
+
+.blog-post-text {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.075em;
+  color: #898989;
+}
+
+.blog-post-wrapper {
+  margin: 0;
+  margin-left: 8px;
+  padding: 0;
+}
+
+.email-subscription {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+  background-color: #3b3c39;
+  background-image: url(img/EmailBg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.email-subscription-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 8px;
+  padding: 0;
+}
+
+.email-subscription-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 370px;
+  color: #ffffff;
+}
+
+.email-subscription-email {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.email-subscription-subscription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.email-subscription-form {
+  width: 670px;
+  height: 40px;
+}
+
+.email-subscription-buttom {
+  width: 100px;
+  height: 30px;
+  margin-top: 10px;
+  padding:5px 15px; 
+  background-color:#00c8c8; 
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.email-subscription-buttom:hover,
+.email-subscription-buttom:focus {
+  background-color: #00dede;
+}
+
+.email-subscription-buttom:active {
+  background-color:#00c8c8;
+}
