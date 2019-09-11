@@ -23,7 +23,16 @@ a {
   text-decoration: none;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
 li {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -1164,4 +1173,43 @@ button {
 
 .email-subscription-buttom:active {
   background-color:#00c8c8;
+}
+
+.footer-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 370px;
+  box-sizing: border-box;
+}
+
+.footer-about-logo {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.footer-wrapper {
+  width: 100%;
+  padding-top: 40px;
+  background-color: #363a42;
+}
+
+.footer-about-social {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-about-social > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+.footer-about-text {
+  margin: 0;
+  margin-bottom: 36px;
 }
