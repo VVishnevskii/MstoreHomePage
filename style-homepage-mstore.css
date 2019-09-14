@@ -1181,24 +1181,34 @@ button {
   justify-content: flex-start;
   align-items: flex-start;
   width: 370px;
+  padding-left: 35px;
   box-sizing: border-box;
+  background-color: #31353d;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.075em;
+  color: #868686;
 }
 
 .footer-about-logo {
+  margin-top: 45px;
   margin-bottom: 20px;
   color: white;
 }
 
 .footer-wrapper {
   width: 100%;
-  padding-top: 40px;
   background-color: #363a42;
 }
 
 .footer-about-social {
   display: flex;
   flex-direction: row;
+  margin-top: 50px;
+  margin-bottom: 45px;
 }
+
 
 .footer-about-social > li {
   display: flex;
@@ -1207,9 +1217,91 @@ button {
   width: 25px;
   height: 20px;
   margin-right: 20px;
+  transition-duration: 0.4s, 0.2s;
+  transition-property: opacity, transform;
 }
 
+.footer-about-social > li:hover {
+  opacity: 0.5;
+}
+
+.footer-about-social > li:active {
+  transform-origin: 50% 50%;
+  transform: rotate(360deg);
+}
+
+
+
 .footer-about-text {
+  width: 290px;
   margin: 0;
   margin-bottom: 36px;
+}
+
+
+
+.footer-about-contacts-white {
+  color: #e1e1e1;
+}
+
+.footer-informations {
+  width: 785px;
+  height: 400px;
+  padding-left: 30px;
+}
+
+.foooter-inner {
+  display: flex;
+}
+
+.footer-information-headline {
+  margin-top: 60px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-information-list {
+  height: 260px;
+  width: 375px;
+  margin-top: 52px;
+  list-style-position: inside;
+  column-count: 2;
+}
+
+.footer-information-list > li {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 48px;
+  letter-spacing: 0.075em;
+}
+
+.footer-information-list > li > a {
+  color: #cccccc;
+}
+
+.footer-information-list > li > a:hover {
+  color: #d9bcbc;
+  text-decoration: underline;
+}
+
+.footer-information-list > li > a:active {
+  color: #978282;
+}
+
+.footer-information-list > li > a:visited {
+  color: #a76161;
+}
+
+.footer-information-main {
+  display: flex;
+}
+
+.footer-information-map {
+  height: 280px;
+  width: 400px;
+  margin-top: 14px;
 }
