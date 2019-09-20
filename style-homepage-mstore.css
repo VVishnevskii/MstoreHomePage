@@ -239,7 +239,7 @@ button {
 
 
 
-.ad-top__inner-position {
+.ad-top__inner--position {
   position: relative;
 }
 
@@ -522,15 +522,13 @@ button {
   text-align: left;
 }
 
-.new-arrivals__shoes-collection-link {
+.new-arrivals__shoes-collection--link {
   position: absolute;
   top: 60px;
   left: 70px;
   display: flex;
   flex-direction: column;
 }
-
-
 
 .shoes-collection__title {
   margin: 0;  
@@ -603,9 +601,7 @@ button {
   box-shadow: 0 1px 0px 0px #636363;
 }
 
-
-
-.product-list {
+.products-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -613,14 +609,14 @@ button {
   padding: 0;
 }
 
-.product-list li {
+.products-list li {
   display: flex;
   width: 270px;
   height: 415px;
   margin-bottom: 30px;
 }
 
-.product-list .items {
+.products-list__items {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -631,20 +627,20 @@ button {
   padding: 0;
 }
   
-.product-list > li .item-1{
+.products-list__item-1{
   background-image: url(img/AbominableHoodie.jpg);
   background-repeat: no-repeat;
   background-position: top;
 }
 
-.item-2 {
+.products-list__item-2 {
   position: relative;
   background-image: url(img/HollisterBackyardSweatshirt.jpg);
   background-repeat: no-repeat;
   background-position: top;
 }
 
-.item-hot::after {
+.products-list__item-hot::after {
   position: absolute;
   top: -21px;
   left: 0;
@@ -665,19 +661,19 @@ button {
   content: "hot"
 }
 
-.item-3 {
+.products-list__item-3 {
   background-image: url(img/OsloTrekHoodie.jpg);
   background-repeat: no-repeat;
   background-position: top;
 }
 
-.item-4 {
+.products-list__item-4 {
   background-image: url(img/MachStreetSweatshirt.jpg);
   background-repeat: no-repeat;
   background-position: top;
 }
 
-.item-new::after {
+.products-list__item-new::after {
   position: absolute;
   top: -21px;
   left: 0;
@@ -698,13 +694,13 @@ button {
   content: "new"
 }
 
-.item-5 {
+.products-list__item-5 {
   background-image: url(img/BackyardSweatShirt.jpg);
   background-repeat: no-repeat;
   background-position: top;
 }
 
-.item-sale::after {
+.products-list__item-sale::after {
   position: absolute;
   top: -21px;
   left: 0;
@@ -725,19 +721,19 @@ button {
   content: "sale"
 }
 
-.item-6 {
+.products-list__item-6 {
   background-image: url(img/FadedShortSleeves.jpg);
   background-repeat: no-repeat;
   background-position: top;
 }
 
-.item-7 {
+.products-list__item-7 {
   background-image: url(img/OsloTrekHoodieMen.jpg);
   background-repeat: no-repeat;
   background-position: top;
 }
 
-.item-8 {
+.products-list__item-8 {
   background-image: url(img/LeatherSneakers.jpg);
   background-repeat: no-repeat;
   background-position: top;
@@ -757,31 +753,31 @@ button {
   transition-property: opacity;
 }
 
-.pop-up .wishlist-card-btn {
+.wishlist-card-btn {
   margin: 0 28px;
 }
 
-.items:hover .pop-up {
+.products-list__items:hover .pop-up {
   opacity: 0.95;
 }
 
-.pop-up > button {
+.btn {
   cursor: pointer;
   border: none;
   background-color: transparent;
 }
 
-.pop-up > button img {
+.btn img {
   transition-duration: 0.3s, 0.2s;
   transition-property: opacity, transform;
 }
 
-.pop-up > button:hover img,
-.pop-up > button:focus  img{
+.btn:hover img,
+.btn:focus img{
   opacity: 0.6;
 }
 
-.pop-up > button:active img {
+.btn:active img {
   transform: scale(1.1);
 }
 
@@ -833,7 +829,7 @@ button {
   background-image: url(img/BackgroundAdBottom.jpg);
 }
 
-.ad-bottom-text {
+.ad-bottom__inner {
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -841,30 +837,30 @@ button {
   padding: 0;
 }
 
-.ad-bottom-text p {
+.ad-bottom__text {
   margin: 0;
   padding: 0;
   text-transform: uppercase;
   color: #ffffff;
 }
 
-.ad-bottom-text > a:hover,
-.ad-bottom-text > a:focus {
+.ad-bottom__text--style-4:hover,
+.ad-bottom__text--style-4:focus {
   opacity: 0.7;
 }
 
-.ad-bottom-text > a:active {
+.ad-bottom__text--style-4:active {
   opacity: 1;
 }
 
-.ad-bottom-text .ad-bottom-text-item-1 {
+.ad-bottom__text--style-1 {
   margin-top: 25px;
   font-size: 18px;
   font-weight: 900;
   letter-spacing: 0.1em;
 }
 
-.ad-bottom-text .ad-bottom-text-item-2 {
+.ad-bottom__text--style-2 {
   width: 398px;
   font-size: 24px;
   font-weight: 300;
@@ -874,17 +870,18 @@ button {
   background-color: #ffffff;
 }
 
-.ad-bottom-text-item-3 {
+.ad-bottom__text--style-3 {
   font-size: 60px;
   font-weight: 900;
   letter-spacing: -0.05em;
   line-height: 60px;
 }
 
-.ad-bottom-text-item-4 {
+.ad-bottom__text--style-4 {
   margin-top: 10px;
   font-size: 14px;
   font-weight: 300;
+  text-transform: none;
   letter-spacing: 0.1em;
   color: #636363;
 }
@@ -899,7 +896,7 @@ button {
   box-shadow: inset 0 0 0 1px pink;
 }
 
-.about-mstore-block {
+.about-mstore__inner {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -910,7 +907,7 @@ button {
   margin-left: 85px;
 }
 
-.about-mstore-title {
+.about-mstore__title {
   position: relative;
   font-size: 30px;
   font-weight: 900;
@@ -919,7 +916,7 @@ button {
   color: #31353d;
 }
 
-.about-mstore-title::before {
+.about-mstore__title::before {
   position: absolute;
   top: 48px;
   left: 112px;
@@ -929,7 +926,7 @@ button {
   content: "";
 }
 
-.about-mstore-text {
+.about-mstore__text {
   margin: 35px 0;
   padding: 0;
   text-align: center;
@@ -939,13 +936,13 @@ button {
   color: #31353d;
 }
 
-.best-sellers-wrapper {
+.best-sellers__wrapper {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
 }
 
-.sale-sidebar {
+.page-sidebar {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -963,7 +960,7 @@ button {
   padding: 0;
 }
 
-.sale-sidebar-link {
+.page-sidebar__link {
   position: absolute;
   z-index: 1;
   top: 80px;
@@ -976,16 +973,17 @@ button {
   color: #252525;
 }
 
-.sale-sidebar-link:hover,
-.sale-sidebar-link:focus {
+.page-sidebar__link:hover,
+.page-sidebar__link:focus {
+  text-decoration: none;
   opacity: 0.7;
 }
 
-.sale-sidebar-link:active {
+.page-sidebar__link:active {
   opacity: 1;
 }
 
-.sale-sidebar-title {
+.page-sidebar__title {
   margin-top: 22px;
   font-family: "BigNoodleTitling", "Arial", sans-serif;
   text-align: center;
@@ -995,7 +993,7 @@ button {
   color: #00c8c8;
 }
 
-.sale-sidebar-text {
+.page-sidebar__text {
   margin: 0;
   padding: 0;
   font-family: "BigNoodleTitling", "Arial", sans-serif;
@@ -1019,7 +1017,7 @@ button {
   padding: 0;
 }
 
-.blog-post-title {
+.blog-post__title {
   margin-top: 20px;
   margin-bottom: 12px;
   font-size: 16px;
@@ -1029,7 +1027,7 @@ button {
   color: #252525;
 }
 
-.blog-post-info {
+.blog-post__info {
   display: flex;
   width: 100%;
   height: 14px;
@@ -1044,14 +1042,14 @@ button {
 
 
 
-.blog-post-date {
+.blog-post__date {
   display: flex;
   margin: 0;
   padding: 0;
   padding-top: 2px;
 }
 
-.blog-post-date::before {
+.blog-post__date::before {
   width: 12px;
   height: 14px;
   margin: 0;
@@ -1062,14 +1060,14 @@ button {
   content: " ";
 }
 
-.blog-post-comment {
+.blog-post__comment {
   display: flex;
   margin: 0;
   padding: 0;
   padding-top: 2px;
 }
 
-.blog-post-comment::before {
+.blog-post__comment::before {
   width: 12px;
   height: 14px;
   margin: 0;
@@ -1080,7 +1078,7 @@ button {
   content: " ";
 }
 
-.blog-post-text {
+.blog-post__text {
   width: 100%;
   margin: 0;
   margin-bottom: 30px;
@@ -1091,7 +1089,7 @@ button {
   color: #898989;
 }
 
-.blog-post-wrapper {
+.blog-post__wrapper {
   margin: 0;
   margin-left: 8px;
   padding: 0;
@@ -1116,7 +1114,7 @@ button {
   padding: 0;
 }
 
-.email-subscription-text {
+.email-subscription__text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1124,28 +1122,28 @@ button {
   color: #ffffff;
 }
 
-.email-subscription-email {
+.email-subscription__email {
   font-size: 24px;
   font-weight: 500;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
-.email-subscription-subscription {
+.email-subscription__form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
 }
 
-.email-subscription-form {
+.email-subscription__input {
   width: 670px;
   height: 40px;
   padding-left: 20px;
   box-sizing: border-box;
 }
 
-.email-subscription-buttom {
+.email-subscription__buttom {
   width: 100px;
   height: 30px;
   margin-top: 10px;
@@ -1160,12 +1158,12 @@ button {
   cursor: pointer;
 }
 
-.email-subscription-buttom:hover,
-.email-subscription-buttom:focus {
+.email-subscription__buttom:hover,
+.email-subscription__buttom:focus {
   background-color: #00dede;
 }
 
-.email-subscription-buttom:active {
+.email-subscription__buttom:active {
   background-color:#00c8c8;
 }
 
@@ -1185,7 +1183,7 @@ button {
   color: #868686;
 }
 
-.footer-about-logo {
+.footer-about__logo {
   margin-top: 45px;
   margin-bottom: 20px;
   color: white;
@@ -1196,15 +1194,10 @@ button {
   background-color: #363a42;
 }
 
-.footer-about-social {
-  display: flex;
-  flex-direction: row;
-  margin-top: 50px;
-  margin-bottom: 45px;
-}
 
 
-.footer-about-social li {
+
+.social-networks__item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1215,18 +1208,18 @@ button {
   transition-property: opacity, transform;
 }
 
-.footer-about-social li:hover {
+.social-networks__item:hover {
   opacity: 0.5;
 }
 
-.footer-about-social li:active {
+.social-networks__item:active {
   transform-origin: 50% 50%;
   transform: rotate(360deg);
 }
 
 
 
-.footer-about-text {
+.footer-about__text {
   width: 290px;
   margin: 0;
   margin-bottom: 36px;
@@ -1234,7 +1227,7 @@ button {
 
 
 
-.footer-about-contacts-white {
+.footer-about__contacts--white {
   color: #e1e1e1;
 }
 
@@ -1248,7 +1241,7 @@ button {
   display: flex;
 }
 
-.footer-information-headline {
+.footer-information__title {
   margin-top: 60px;
   font-size: 18px;
   font-weight: 700;
@@ -1258,7 +1251,7 @@ button {
   color: #ffffff;
 }
 
-.footer-information-list {
+.footer-information__list {
   height: 260px;
   width: 375px;
   margin-top: 52px;
@@ -1266,35 +1259,35 @@ button {
   column-count: 2;
 }
 
-.footer-information-list li {
+.footer-information__list li {
   font-size: 12px;
   font-weight: 300;
   line-height: 48px;
   letter-spacing: 0.075em;
 }
 
-.footer-information-list > li > a {
+.footer-information__list a {
   color: #cccccc;
 }
 
-.footer-information-list > li > a:hover {
+.footer-information__list a:hover {
   color: #d9bcbc;
   text-decoration: underline;
 }
 
-.footer-information-list > li > a:active {
+.footer-information__list a:active {
   color: #978282;
 }
 
-.footer-information-list > li > a:visited {
+.footer-information__list a:visited {
   color: #a76161;
 }
 
-.footer-information-main {
+.footer-information__inner {
   display: flex;
 }
 
-.footer-information-map {
+.footer-information__map {
   height: 280px;
   width: 400px;
   margin-top: 14px;
@@ -1303,3 +1296,17 @@ button {
 
 
 
+
+.social-networks-list {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  margin-bottom: 45px;
+}
+
+.social-networks {
+  display: flex;
+  flex-direction: row;
+  margin-top: 60px;
+  margin-bottom: 45px;
+}
