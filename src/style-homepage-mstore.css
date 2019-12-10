@@ -235,7 +235,7 @@ button {
   margin: 0;
   padding: 0;
   background-color: #96dbc9;
-  background-image: url(img/background-ad-top.jpg);
+  background-image: url(../img/background-ad-top.jpg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -307,7 +307,7 @@ button {
   margin-left: 6px;
   width: 5px;
   height: 8px;
-  background-image: url(img/Arrow_Right.png);
+  background-image: url(../img/Arrow_Right.png);
   content: "";
 }
 
@@ -374,7 +374,7 @@ button {
   left: 0px;
   width: 70px;
   height: 100%;
-  background-image: url(img/Shiping.png);
+  background-image: url(../img/Shiping.png);
   background-repeat: no-repeat;
   background-position: center;
   content: "";
@@ -390,7 +390,7 @@ button {
   left: 0px;
   width: 70px;
   height: 100%;
-  background-image: url(img/Support.png);
+  background-image: url(../img/Support.png);
   background-repeat: no-repeat;
   background-position: center;
   content: "";
@@ -402,7 +402,7 @@ button {
   left: 0px;
   width: 70px;
   height: 100%;
-  background-image: url(img/Return.png);
+  background-image: url(../img/Return.png);
   background-repeat: no-repeat;
   background-position: center;
   content: "";
@@ -414,7 +414,7 @@ button {
   left: 0px;
   width: 70px;
   height: 100%;
-  background-image: url(img/Payment.png);
+  background-image: url(../img/Payment.png);
   background-repeat: no-repeat;
   background-position: center;
   content: "";
@@ -431,13 +431,13 @@ button {
 
 .new-arrival--left {
   align-items: flex-end;
-  background-image: url(img/ShirtForBoysBG.jpg);
+  background-image: url(../img/ShirtForBoysBG.jpg);
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .new-arrival--right {
-  background-image: url(img/ShirtForGirlsBG.jpg);
+  background-image: url(../img/ShirtForGirlsBG.jpg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -454,7 +454,7 @@ button {
   position: relative;
   width: 1170px;
   height: 260px;
-  background-image: url(img/ShoesCollectionBg.jpg);
+  background-image: url(../img/ShoesCollectionBg.jpg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -635,14 +635,14 @@ button {
 }
   
 .products-list__item-1{
-  background-image: url(img/AbominableHoodie.jpg);
+  background-image: url(../img/AbominableHoodie.jpg);
   background-repeat: no-repeat;
   background-position: top;
 }
 
 .products-list__item-2 {
   position: relative;
-  background-image: url(img/HollisterBackyardSweatshirt.jpg);
+  background-image: url(../img/HollisterBackyardSweatshirt.jpg);
   background-repeat: no-repeat;
   background-position: top;
 }
@@ -669,13 +669,13 @@ button {
 }
 
 .products-list__item-3 {
-  background-image: url(img/OsloTrekHoodie.jpg);
+  background-image: url(../img/OsloTrekHoodie.jpg);
   background-repeat: no-repeat;
   background-position: top;
 }
 
 .products-list__item-4 {
-  background-image: url(img/MachStreetSweatshirt.jpg);
+  background-image: url(../img/MachStreetSweatshirt.jpg);
   background-repeat: no-repeat;
   background-position: top;
 }
@@ -702,7 +702,7 @@ button {
 }
 
 .products-list__item-5 {
-  background-image: url(img/BackyardSweatShirt.jpg);
+  background-image: url(../img/BackyardSweatShirt.jpg);
   background-repeat: no-repeat;
   background-position: top;
 }
@@ -729,19 +729,19 @@ button {
 }
 
 .products-list__item-6 {
-  background-image: url(img/FadedShortSleeves.jpg);
+  background-image: url(../img/FadedShortSleeves.jpg);
   background-repeat: no-repeat;
   background-position: top;
 }
 
 .products-list__item-7 {
-  background-image: url(img/OsloTrekHoodieMen.jpg);
+  background-image: url(../img/OsloTrekHoodieMen.jpg);
   background-repeat: no-repeat;
   background-position: top;
 }
 
 .products-list__item-8 {
-  background-image: url(img/LeatherSneakers.jpg);
+  background-image: url(../img/LeatherSneakers.jpg);
   background-repeat: no-repeat;
   background-position: top;
 }
@@ -833,7 +833,7 @@ button {
   height: 200px;
   margin: 20px auto 30px auto;
   background-color: #2f4ba0;
-  background-image: url(img/BackgroundAdBottom.jpg);
+  background-image: url(../img/BackgroundAdBottom.jpg);
 }
 
 .ad-bottom__inner {
@@ -895,7 +895,7 @@ button {
 
 .about-mstore {
   background-color: #96dbc9;
-  background-image: url(img/bgWeLoveMstore.jpg);
+  background-image: url(../img/bgWeLoveMstore.jpg);
   background-repeat: no-repeat;
   background-position: right;
   
@@ -958,7 +958,7 @@ button {
   height: 506px;
   margin: 0;
   padding: 0;
-  background-image: url(img/bgSaleSidebar.jpg);
+  background-image: url(../img/bgSaleSidebar.jpg);
 }
 
 .best-sellers {
@@ -1062,7 +1062,7 @@ button {
   height: 14px;
   margin: 0;
   margin-right: 7px;
-  background-image: url(img/BlogCal.jpg);
+  background-image: url(../img/BlogCal.jpg);
   background-position: 0 -1.5px;
   background-repeat: no-repeat;
   content: " ";
@@ -1081,7 +1081,7 @@ button {
   margin: 0;
   margin-right: 7px;
   margin-left: 25px;
-  background-image: url(img/BlogCom.jpg);
+  background-image: url(../img/BlogCom.jpg);
   background-repeat: no-repeat;
   content: " ";
 }
@@ -1109,7 +1109,7 @@ button {
   width: 100%;
   height: 200px;
   background-color: #3b3c39;
-  background-image: url(img/EmailBg.jpg);
+  background-image: url(../img/EmailBg.jpg);
   background-position: center;
   background-repeat: no-repeat;
 }
